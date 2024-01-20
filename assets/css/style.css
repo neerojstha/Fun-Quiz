@@ -1,0 +1,10 @@
+body {
+    background: rgb(0, 81, 255);
+}
+
+container {
+    padding-left: 1rem;
+    padding-top: 2rem;
+    margin-top: 150px;
+    text-align: center;
+}
