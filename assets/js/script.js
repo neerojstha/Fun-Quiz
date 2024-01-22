@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const quizData = [
+    var quizData = [
         {
           question: 'Which famous river runs through Dublin?',
           options: ['Thames', 'Liffey', 'Shannon', 'Nile'],
@@ -61,11 +61,11 @@ document.addEventListener('DOMContentLoaded', function() {
         },
     ];
 
-    const quizContainer = document.getElementById('quiz');
-    const resultContainer = document.getElementById('result');
-    const submitButton = document.getElementById('submit');
-    const retryButton = document.getElementById('retry');
-    const showAnswerButton = document.getElementById('showAnswer');
+    var quizContainer = document.getElementById('quiz');
+    var resultContainer = document.getElementById('result');
+    var submitButton = document.getElementById('submit');
+    var retryButton = document.getElementById('retry');
+    var showAnswerButton = document.getElementById('showAnswer');
 
     let currentQuestion = 0;
     let score = 0;
