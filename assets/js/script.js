@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
           question: 'Which county is Brunratty Castle in Ireland?',
           options: ['Laois', 'Clare', 'Leinster', 'Kerry'],
-          answer: 'France',
+          answer: 'Clare',
         },
         {
           question: 'Who is the Current president of United States of America?',
