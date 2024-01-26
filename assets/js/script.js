@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let score = 0;
     let incorrectAnswers = [];
 
-    function shuffleArray(array) {
+    function customShuffle(array) {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [array[i], array[j]] = [array[j], array[i]];
@@ -89,14 +89,14 @@ document.addEventListener('DOMContentLoaded', function() {
             optionsElement.className = 'options';
 
             const shuffledOptions = [...questionData.options];
-            shuffleArray(shuffledOptions);
+            customShuffle(shuffledOptions);
 
             shuffledOptions.forEach(optionText => {
                 const option = document.createElement('label');
                 option.className = 'option';
 
                 const radio = document.createElement('input');
-                radio.type = 'radio';
+                radio.type = 'checkbox';
                 radio.name = 'quiz';
                 radio.value = optionText;
 
