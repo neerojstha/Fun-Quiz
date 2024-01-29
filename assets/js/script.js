@@ -61,8 +61,8 @@ document.addEventListener('DOMContentLoaded', function() {
         },
     ];
 
-    var quizContainer = document.getElementById('quiz');
-    var resultContainer = document.getElementById('result');
+    var quizContainer = document.getElementById('ques');
+    var resultContainer = document.getElementById('solution');
     var submitButton = document.getElementById('submit');
     var retryButton = document.getElementById('retry');
     var showAnswerButton = document.getElementById('showAnswer');
