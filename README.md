@@ -3,6 +3,9 @@
 ## Overview
 Fun Quiz is a web-based trivia game that challenges players with a variety of questions on different topics. It's designed to be interactive, user-friendly, and enjoyable for users of all ages.
 
+![Alt text](assets/images/quiz-fontpage.jpg)
+
+
 ## Features
 - **User-Friendly Interface**: A clean and intuitive interface that is easy to navigate.
 - **Dynamic Question Pool**: A range of questions covering various subjects.
@@ -22,22 +25,21 @@ Fun Quiz is a web-based trivia game that challenges players with a variety of qu
 - **CSS**: For styling the web page.
 - **JavaScript**: For quiz functionality and interactivity.
 
-## Setup and Installation
+## Performance/Testing
 To run the quiz locally, follow these steps:
-1. Clone the repository: `git clone https://github.com/yourusername/fun-quiz.git`
-2. Navigate to the project directory: `cd fun-quiz`
-3. Open `index.html` in your web browser.
+1. This pages tested in different browers such as chrome, firefox, safari and ms egde and working perfectly fine.
+2. pages are clear, good looking and user friendly.
 
-## Contributions
-Contributions to improve Fun Quiz are welcome. Please follow these steps to contribute:
-1. Fork the repository.
-2. Create a new branch: `git checkout -b your-branch-name`
-3. Make your changes and commit them: `git commit -m 'Add some feature'`
-4. Push to the original branch: `git push origin your-branch-name`
-5. Create the pull request.
+    - W3 Validator
+    ![Alt text](assets/images/quiz-htmlchecker.jpg)
 
-Alternatively, see the GitHub documentation on [creating a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+    - Jigsaw css Validator
+    ![Alt text](assets/images/quiz-csschecker.jpg)
 
+
+## Bugs
+- Slower to connect with browser
+- Mobile screen compatiblity issues
 ## Deployment
 - This pages are deployed in git hub pages and published
 - site link : https://neerojstha.github.io/Fun-Quiz/
