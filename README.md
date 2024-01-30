@@ -36,6 +36,9 @@ To run the quiz locally, follow these steps:
     - Jigsaw css Validator
     ![Alt text](assets/images/quiz-csschecker.jpg)
 
+    - Lighthouse Test
+    ![Alt text](assets/images/quiz-lighthouse.jpg)
+
 
 ## Bugs
 - Slower to connect with browser
