@@ -65,3 +65,41 @@ h1 {
 .hide{
   display: none;
 }
+
+
+/* Container for the username and start button */
+.username-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style for the username input field */
+#username {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Style for the start button */
+#startQuiz {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the start button */
+#startQuiz:hover {
+  background-color: #0056b3;
+}
+
+.hide {
+  display: none;
+}
+

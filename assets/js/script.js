@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var quizData = [
+    let quizData = [
         {
           question: 'Which famous river runs through Dublin?',
           options: ['Thames', 'Liffey', 'Shannon', 'Nile'],
@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
           question: 'Who is the Current president of United States of America?',
-          options: ['Bill Clinton', 'Barak Obama', 'Joe', 'Kennedy'],
-          answer: 'Joe',
+          options: ['Bill Clinton', 'Barak Obama', 'Joe Biden', 'Kennedy'],
+          answer: 'Joe Biden',
         },
         {
           question: 'What is the currency of Denmark?',
@@ -61,15 +61,29 @@ document.addEventListener('DOMContentLoaded', function() {
         },
     ];
 
-    var quizContainer = document.getElementById('ques');
-    var resultContainer = document.getElementById('solution');
-    var submitButton = document.getElementById('submit');
-    var retryButton = document.getElementById('retry');
-    var showAnswerButton = document.getElementById('showAnswer');
+    let quizContainer = document.getElementById('ques');
+    let resultContainer = document.getElementById('solution');
+    let submitButton = document.getElementById('submit');
+    let retryButton = document.getElementById('retry');
+    let showAnswerButton = document.getElementById('showAnswer');
+    let usernameInput = document.getElementById('username'); // Username input field
+    let startQuizButton = document.getElementById('startQuiz'); // Button to start the quiz
 
     let currentQuestion = 0;
     let score = 0;
     let incorrectAnswers = [];
+    let username = '';
+
+
+    function startQuiz() {
+      username = usernameInput.value.trim();
+      if (username === '') {
+          alert('Please enter a username to start the quiz.');
+          return;
+      }
+      document.querySelector('.username-container').style.display = 'none';
+      displayQuestion();
+  }
 
     function customShuffle(array) {
         for (let i = array.length - 1; i > 0; i--) {
@@ -80,23 +94,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function displayQuestion() {
         if (currentQuestion < quizData.length) {
-            const questionData = quizData[currentQuestion];
-            const questionElement = document.createElement('div');
+            let questionData = quizData[currentQuestion];
+            let questionElement = document.createElement('div');
             questionElement.className = 'question';
             questionElement.innerHTML = questionData.question;
 
-            const optionsElement = document.createElement('div');
+            let optionsElement = document.createElement('div');
             optionsElement.className = 'options';
 
-            const shuffledOptions = [...questionData.options];
+            let shuffledOptions = [...questionData.options];
             customShuffle(shuffledOptions);
 
             shuffledOptions.forEach(optionText => {
-                const option = document.createElement('label');
+                let option = document.createElement('label');
                 option.className = 'option';
 
-                const radio = document.createElement('input');
-                radio.type = 'checkbox';
+                let radio = document.createElement('input');
+                radio.type = 'radio';
                 radio.name = 'quiz';
                 radio.value = optionText;
 
@@ -115,9 +129,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function checkAnswer() {
-        const selectedOption = document.querySelector('input[name="quiz"]:checked');
+        let selectedOption = document.querySelector('input[name="quiz"]:checked');
         if (selectedOption) {
-            const answer = selectedOption.value;
+            let answer = selectedOption.value;
             if (answer === quizData[currentQuestion].answer) {
                 score++;
             } else {
@@ -141,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
         submitButton.style.display = 'none';
         retryButton.style.display = 'inline-block';
         showAnswerButton.style.display = 'inline-block';
-        resultContainer.innerHTML = `You scored ${score} out of ${quizData.length}!`;
+        resultContainer.innerHTML = `${username}You scored ${score} out of ${quizData.length}!`;
     }
 
     function retryQuiz() {
@@ -177,6 +191,7 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
     }
 
+    startQuizButton.addEventListener('click', startQuiz);
     submitButton.addEventListener('click', checkAnswer);
     retryButton.addEventListener('click', retryQuiz);
     showAnswerButton.addEventListener('click', showAnswer);
