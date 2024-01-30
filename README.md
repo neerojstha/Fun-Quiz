@@ -1,39 +1,47 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Fun Quiz
 
-Welcome,
+## Overview
+Fun Quiz is a web-based trivia game that challenges players with a variety of questions on different topics. It's designed to be interactive, user-friendly, and enjoyable for users of all ages.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Features
+- **User-Friendly Interface**: A clean and intuitive interface that is easy to navigate.
+- **Dynamic Question Pool**: A range of questions covering various subjects.
+- **Immediate Feedback**: Users receive immediate feedback on their answers.
+- **Score Tracking**: The quiz keeps track of the user's score throughout the session.
+- **Username Entry**: Users can enter their names to personalize the quiz experience.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+## How to Play
+1. **Enter Username**: Start by entering your username.
+2. **Answer Questions**: Select your answer from the provided options for each question.
+3. **Submit Answers**: Click on 'Submit' to confirm your answer.
+4. **View Results**: At the end of the quiz, see your total score and review the answers.
+5. **Retry or Review**: Choose to retry the quiz or review the answers to questions you missed.
 
-## Codeanywhere Reminders
+## Technologies Used
+- **HTML**: For structuring the web page.
+- **CSS**: For styling the web page.
+- **JavaScript**: For quiz functionality and interactivity.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+## Setup and Installation
+To run the quiz locally, follow these steps:
+1. Clone the repository: `git clone https://github.com/yourusername/fun-quiz.git`
+2. Navigate to the project directory: `cd fun-quiz`
+3. Open `index.html` in your web browser.
 
-`python3 -m http.server`
+## Contributions
+Contributions to improve Fun Quiz are welcome. Please follow these steps to contribute:
+1. Fork the repository.
+2. Create a new branch: `git checkout -b your-branch-name`
+3. Make your changes and commit them: `git commit -m 'Add some feature'`
+4. Push to the original branch: `git push origin your-branch-name`
+5. Create the pull request.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+Alternatively, see the GitHub documentation on [creating a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+## Deployment
+- This pages are deployed in git hub pages and published
+- site link : https://neerojstha.github.io/Fun-Quiz/
 
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+## Credits
+- This pages html, css and javascript codes are inspired from love Maths project.
+- Special thanks to my mentor Rahul Lakhanpal for mentoring me during this project.
